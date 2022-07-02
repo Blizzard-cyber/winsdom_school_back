@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 引入properties文件 -->
+    <properties resource="jdbc.properties"/>
+
+    <settings>
+        <!-- 将表中字段的下划线自动转换为驼峰 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 开启延迟加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
+    <!-- 设置类型别名(不指定则为不区分首字母大小写的类名) -->
+    <typeAliases>
+        <package name="com.campus.wisdom.entity"/>
+    </typeAliases>
+
+    <environments default="development">
+        <!-- environment:配置某个具体的环境 -->
+        <environment id="development">
+            <!-- 设置事务管理方式 -->
+            <transactionManager type="JDBC"/>
+            <!-- 设置数据源 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <!-- 以包为单位引入映射文件 -->
+        <package name="com.campus.wisdom.mapper"/>
+    </mappers>
+</configuration>
