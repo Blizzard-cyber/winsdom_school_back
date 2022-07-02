@@ -2,11 +2,11 @@
 
 ## 提交指南
 
-![image-20220702160417445](C:\Users\tao020704\AppData\Roaming\Typora\typora-user-images\image-20220702160417445.png)
+![push](Img/push.png)
 
 ## 合并指南
 
-
+![merge](Img/merge.png)
 
 ##  Setup
 
