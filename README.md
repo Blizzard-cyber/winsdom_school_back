@@ -2,22 +2,50 @@
 
 ## 提交指南
 
-- [x] **食用之前一定先启动后端**！！！
-- [x] **在setting.py中输入自己的Mysql账号密码**
-- [x] **在views.py中输入接口的信息**
+![image-20220702160417445](C:\Users\tao020704\AppData\Roaming\Typora\typora-user-images\image-20220702160417445.png)
+
+## 合并指南
+
+
 
 ##  Setup
 
 ``` bash
-# install dependencies
-pip install -r requirements.txt
+#拉取远端仓库代码
+git clone https://github.com/Blizzard-cyber/winsdom_school_back.git
 
-# fill in your Mysql  username and password
+#拉取到本地后查看master分支（主分支）内容为模板内容
+.....
+#编写代码
+.....
+#编写代码完成
 
-#  migrate your database
-python manage.py makemigrations
-python manage.py migrate
+#创建自己的分支
+git checkout -b <yourBranchName>
 
-# run your django project
-python manage.py runserver
+#提交过程
+#提交所有更改
+git add .
+
+#commit
+git commit -m "提交说明"
+
+#push
+git push origin <yourBranchName>
+
+#合并代码到master分支
+#切换到master分支
+git  checkout master
+
+#pull master分支的状态
+git pull origin master
+
+#合并自己分支到master
+git  merge test
+
+#可检查状态
+git status
+
+#push到远端
+git push origin master
 ```
