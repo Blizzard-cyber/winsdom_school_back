@@ -34,17 +34,23 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Spring-core -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.3.21</version>
-        </dependency>
         <!-- Mybatis核心 -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.10</version>
+        </dependency>
+        <!-- Spring-JDBC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.20</version>
+        </dependency>
+        <!-- MyBatis整合Spring的适配包 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.7</version>
         </dependency>
         <!-- junit测试 -->
         <dependency>
@@ -53,11 +59,23 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        <!--Spring-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.3.7.RELEASE</version>
+        </dependency>
         <!-- MySQL驱动 -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.29</version>
+        </dependency>
+        <!-- druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.11</version>
         </dependency>
         <!-- jackson -->
         <dependency>
@@ -66,5 +84,4 @@
             <version>2.13.3</version>
         </dependency>
     </dependencies>
-
 </project>
