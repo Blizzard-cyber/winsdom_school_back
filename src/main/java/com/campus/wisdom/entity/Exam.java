@@ -15,7 +15,8 @@ public class Exam{
     private String cid;
     private String name;
     @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
-    private Date time;
+    private Date date;
+    private String time;
     private String location;
     private String seatNum;
     private String remark;
@@ -23,9 +24,10 @@ public class Exam{
     public Exam() {
     }
 
-    public Exam(String cid, String name, Date time, String location, String seatNum, String remark) {
+    public Exam(String cid, String name, Date date, String time, String location, String seatNum, String remark) {
         this.cid = cid;
         this.name = name;
+        this.date = date;
         this.time = time;
         this.location = location;
         this.seatNum = seatNum;
@@ -48,11 +50,19 @@ public class Exam{
         this.name = name;
     }
 
-    public Date getTime() {
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -85,7 +95,8 @@ public class Exam{
         return "Exam{" +
                 "cid='" + cid + '\'' +
                 ", name='" + name + '\'' +
-                ", time=" + time +
+                ", date=" + date +
+                ", time='" + time + '\'' +
                 ", location='" + location + '\'' +
                 ", seatNum='" + seatNum + '\'' +
                 ", remark='" + remark + '\'' +

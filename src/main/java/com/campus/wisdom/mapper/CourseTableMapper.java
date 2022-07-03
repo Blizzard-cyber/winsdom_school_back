@@ -14,4 +14,6 @@ import java.util.List;
  **/
 public interface CourseTableMapper {
     List<CourseTable> getCourseTableListBySid(@Param("id") String sid,@Param("semester") String semester);
+
+    List<String> getCidListBySid(@Param("id") String sid, @Param("semester") String semester);
 }

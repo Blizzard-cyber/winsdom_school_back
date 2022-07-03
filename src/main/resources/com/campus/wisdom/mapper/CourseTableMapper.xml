@@ -26,4 +26,9 @@
                      select="com.campus.wisdom.mapper.TextbookMapper.getTextbookById"
                      column="bid"/>
     </resultMap>
+
+    <!-- List<String> getCidListBySid(@Param("id") String sid,@Param("semester") String semester) -->
+    <select id="getCidListBySid" resultType="java.lang.String">
+        SELECT cid FROM course_table WHERE sid = #{id} AND semester = #{semester}
+    </select>
 </mapper>

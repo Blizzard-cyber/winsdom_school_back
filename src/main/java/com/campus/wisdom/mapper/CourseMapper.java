@@ -3,6 +3,7 @@ package com.campus.wisdom.mapper;
 import com.campus.wisdom.entity.Course;
 import org.apache.ibatis.annotations.Param;
 
+
 /**
  * @ClassName CourseMapper
  * @Description
