@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.wisdom.mapper.StudentMapper">
+    <!-- Student getStudentBySid(@Param("sid") String sid) -->
+    <select id="getStudentBySid" resultType="Student">
+        SELECT * FROM student WHERE sid = #{sid}
+    </select>
+</mapper>

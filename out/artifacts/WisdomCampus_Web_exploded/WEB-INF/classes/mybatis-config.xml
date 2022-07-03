@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 将表中字段的下划线自动转换为驼峰 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 设置类型别名(不指定则为不区分首字母大小写的类名) -->
+    <typeAliases>
+        <package name="com.campus.wisdom.entity"/>
+    </typeAliases>
+</configuration>
