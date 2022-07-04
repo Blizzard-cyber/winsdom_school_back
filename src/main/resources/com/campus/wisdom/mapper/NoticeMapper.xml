@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.wisdom.mapper.NoticeMapper">
+    <select id="getNoticeByNid" resultType="Notice">
+        SELECT * FROM notice WHERE nid = #{nid}
+    </select>
+    
+    <select id="getAllNotice" resultType="Notice">
+        SELECT * FROM notice;
+    </select>
+
+
+
+<!--    <resultMap id="noticeMap" type="Notice">-->
+<!--        <result column="nid" property="nid" />-->
+<!--        <result column="headline" property="headline" />-->
+<!--        <result column="content" property="content"  />-->
+<!--        <result column="img" property="img"/>-->
+<!--    </resultMap>-->
+
+<!--    <insert id="addNoticeByNid" parameterType="com.campus.wisdom.service.Notice">-->
+<!--        INSERT INTO notice(nid, headline, content, img) VALUES (#{nid}, #{headline}, #{content}, #{img})-->
+<!--    </insert>-->
+
+</mapper>

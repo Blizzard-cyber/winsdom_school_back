@@ -1,7 +1,9 @@
 import com.campus.wisdom.entity.CourseTable;
+import com.campus.wisdom.entity.Student;
 import com.campus.wisdom.entity.Textbook;
 import com.campus.wisdom.mapper.CourseTableMapper;
 
+import com.campus.wisdom.mapper.StudentMapper;
 import com.campus.wisdom.mapper.TextbookMapper;
 import com.campus.wisdom.service.CourseTableService;
 import com.campus.wisdom.service.TextbookService;
@@ -10,6 +12,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.List;
 
@@ -22,31 +25,17 @@ import java.util.List;
  * @Version 1.0
  **/
 @RunWith(SpringJUnit4ClassRunner.class)
+@WebAppConfiguration
 @ContextConfiguration(locations={"classpath:applicationContext.xml"})
 public class MyTest {
     @Autowired
-    private CourseTableMapper courseTableMapper;
-    @Autowired
-    private TextbookMapper textbookMapper;
-
-    @Autowired
-    private CourseTableService courseTableService;
-    @Autowired
-    private TextbookService textbookService;
+//    private CourseTableMapper courseTableMapper;
+    private StudentMapper studentMapper;
 
     @Test
-    public void testMapper() {
-        Textbook t = textbookMapper.getTextbookById("9787302408642");
-        List<CourseTable> a = courseTableMapper.getCourseTableListBySid("2020080902012", "1");
-        System.out.println(a);
-        System.out.println(t);
-    }
-
-    @Test
-    public void testService(){
-        Textbook t = textbookService.getTextbookById("9787302408642");
-        List<CourseTable> c = courseTableService.getCourseTableListBySid("2020080902012", "1");
-        System.out.println(c);
-        System.out.println(t);
+    public void test() {
+//      List<CourseTable> courseTableListBySid = courseTableMapper.getCourseTableListBySid("2020080902012", "1");
+        Student student = studentMapper.getStudentBySid("1");
+        System.out.println(student);
     }
 }

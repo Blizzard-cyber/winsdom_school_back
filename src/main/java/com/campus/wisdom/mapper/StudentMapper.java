@@ -12,4 +12,6 @@ import org.apache.ibatis.annotations.Param;
  **/
 public interface StudentMapper {
     Student getStudentBySid(@Param("sid") String sid);
+
+    void modifyPhone(@Param("sid") String sid, @Param("phone") String phone);
 }

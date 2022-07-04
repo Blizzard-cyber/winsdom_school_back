@@ -7,4 +7,9 @@
     <select id="getStudentBySid" resultType="Student">
         SELECT * FROM student WHERE sid = #{sid}
     </select>
+
+    <update id="modifyPhone">
+        update student set phone = #{phone} where sid = #{sid}
+    </update>
+
 </mapper>

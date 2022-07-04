@@ -1,0 +1,34 @@
+package com.campus.wisdom.controller;
+
+import com.campus.wisdom.entity.News;
+import com.campus.wisdom.entity.Notice;
+import com.campus.wisdom.service.NewsService;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+/**
+ * @Author:Gary
+ * @ProjectName:winsdom_school_back
+ * @Date: 2022/7/3 19:50
+ **/
+@RestController
+@RequestMapping("/news")
+public class NewsController {
+    @Resource
+    private NewsService newsService;
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public News getOneNews(@PathVariable("id") String id) {
+        return newsService.getNewsById(id);
+    }
+
+    @RequestMapping(value="/", method = RequestMethod.GET)
+    public List<News> getAllNotice() {
+        return newsService.getAllNews();
+    }
+}
