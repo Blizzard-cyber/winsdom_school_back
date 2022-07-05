@@ -31,4 +31,9 @@
     <select id="getCidListBySid" resultType="java.lang.String">
         SELECT cid FROM course_table WHERE sid = #{id} AND semester = #{semester}
     </select>
+
+    <!-- List<String> getSemesterList() -->
+    <select id="getSemesterList" resultType="java.lang.String">
+        SELECT DISTINCT semester FROM course_table
+    </select>
 </mapper>

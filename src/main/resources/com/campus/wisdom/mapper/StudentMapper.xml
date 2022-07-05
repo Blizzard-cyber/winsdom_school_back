@@ -7,4 +7,9 @@
     <select id="getStudentBySid" resultType="Student">
         SELECT * FROM student WHERE sid = #{sid}
     </select>
+
+    <!-- Student getStudentBySidAndPassword(@Param("sid") String sid,@Param("password") String password) -->
+    <select id="getStudentBySidAndPassword" resultType="Student">
+        SELECT * FROM student WHERE sid = #{sid} AND password = #{password}
+    </select>
 </mapper>

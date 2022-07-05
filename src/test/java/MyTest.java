@@ -1,11 +1,10 @@
 import com.campus.wisdom.entity.CourseTable;
-import com.campus.wisdom.entity.Exam;
+import com.campus.wisdom.entity.Study;
 import com.campus.wisdom.entity.Textbook;
-import com.campus.wisdom.mapper.CourseTableMapper;
+import com.campus.wisdom.mapper.*;
 
-import com.campus.wisdom.mapper.ExamMapper;
-import com.campus.wisdom.mapper.TextbookMapper;
 import com.campus.wisdom.service.CourseTableService;
+import com.campus.wisdom.service.StudyService;
 import com.campus.wisdom.service.TextbookService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,23 +37,40 @@ public class MyTest {
     @Autowired
     private ExamMapper examMapper;
 
+    @Autowired
+    private GdesignMapper gdesignMapper;
+
+    @Autowired
+    private StudyMapper studyMapper;
+
+    @Autowired
+    private StudyService studyService;
+
     @Test
     public void testMapper() {
-        Textbook t = textbookMapper.getTextbookById("9787302408642");
-        List<CourseTable> a = courseTableMapper.getCourseTableListBySid("2020080902012", "1");
-        List<String> cid = courseTableMapper.getCidListBySid("2020080902012", "1");
-        List<Exam> examList = examMapper.getExamListByCid(cid);
-        System.out.println(examList);
-        System.out.println(cid);
-        System.out.println(a);
-        System.out.println(t);
+//        Textbook t = textbookMapper.getTextbookById("9787302408642");
+//        List<CourseTable> a = courseTableMapper.getCourseTableListBySid("2020080902012", "1");
+//        List<String> cid = courseTableMapper.getCidListBySid("2020080902012", "1");
+//        List<Exam> examList = examMapper.getExamListByCid(cid);
+//        System.out.println(examList);
+//        System.out.println(cid);
+//        System.out.println(a);
+//        System.out.println(t);
+//        Gdesign gdesign = gdesignMapper.getGdesignBySid("2020080902012");
+//        System.out.println(gdesign);
+        List<Study> studyList = studyMapper.getStudyListBySid("2020080902012");
+        System.out.println(studyList);
     }
 
     @Test
     public void testService(){
-        Textbook t = textbookService.getTextbookById("9787302408642");
-        List<CourseTable> c = courseTableService.getCourseTableListBySid("2020080902012", "1");
-        System.out.println(c);
-        System.out.println(t);
+//        Textbook t = textbookService.getTextbookById("9787302408642");
+//        List<CourseTable> c = courseTableService.getCourseTableListBySid("2020080902012", "1");
+//        System.out.println(c);
+//        System.out.println(t);
+//        List<Study> studyList = studyService.getStudyListBySid("2020080902012");
+//        System.out.println(studyList);
+        List<String> list = courseTableMapper.getSemesterList();
+        System.out.println(list);
     }
 }

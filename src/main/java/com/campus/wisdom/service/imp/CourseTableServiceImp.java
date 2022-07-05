@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @ClassName CourseTableServiceImp
- * @Description
+ * @Description 课程表服务层具体实现
  * @Author Abel
  * @Date 2022/7/2 16:19
  * @Version 1.0
@@ -22,5 +22,19 @@ public class CourseTableServiceImp implements CourseTableService {
     @Override
     public List<CourseTable> getCourseTableListBySid(String sid,String semester) {
         return courseTableMapper.getCourseTableListBySid(sid,semester);
+    }
+
+    @Override
+    public String getSemester() {
+        List<String> semesterList = courseTableMapper.getSemesterList();
+
+        int s = 0;
+        for(String semester : semesterList){
+            if(Integer.parseInt(semester) > s){
+                s = Integer.parseInt(semester);
+            }
+        }
+
+        return String.valueOf(s);
     }
 }
