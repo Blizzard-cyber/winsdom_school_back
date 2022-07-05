@@ -10,7 +10,7 @@ import java.util.List;
  * @Date: 2022/7/3 20:27
  **/
 public interface LabAppointService {
-    LabAppoint getLabAppointByLabId(String labId);
+    LabAppoint getLabAppointById(String id);
 
     List<LabAppoint> getAllLabAppoint();
 }

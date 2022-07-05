@@ -18,8 +18,8 @@ public class NoticeServiceImp implements com.campus.wisdom.service.NoticeService
     NoticeMapper noticeMapper;
 
     @Override
-    public Notice getNoticeByNid(String nid) {
-        return noticeMapper.getNoticeByNid(nid);
+    public Notice getNoticeById(String id) {
+        return noticeMapper.getNoticeById(id);
     }
 
     @Override

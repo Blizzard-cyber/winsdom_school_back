@@ -3,6 +3,7 @@ package com.campus.wisdom.controller;
 import com.campus.wisdom.entity.News;
 import com.campus.wisdom.entity.Notice;
 import com.campus.wisdom.service.NewsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -17,7 +18,7 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("/news")
 public class NewsController {
-    @Resource
+    @Autowired
     private NewsService newsService;
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

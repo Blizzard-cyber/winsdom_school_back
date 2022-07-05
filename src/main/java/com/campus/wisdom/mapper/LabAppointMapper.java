@@ -12,7 +12,7 @@ import java.util.List;
  * @Date: 2022/7/3 20:25
  **/
 public interface LabAppointMapper {
-    LabAppoint getLabAppointByLabId(String labId);
+    LabAppoint getLabAppointById(String id);
 
     List<LabAppoint> getAllLabAppoint();
 }

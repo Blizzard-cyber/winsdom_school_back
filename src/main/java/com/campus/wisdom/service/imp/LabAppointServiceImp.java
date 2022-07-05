@@ -19,8 +19,8 @@ public class LabAppointServiceImp implements LabAppointService {
     LabAppointMapper labAppointMapper;
 
     @Override
-    public LabAppoint getLabAppointByLabId(String labId) {
-        return labAppointMapper.getLabAppointByLabId(labId);
+    public LabAppoint getLabAppointById(String id) {
+        return labAppointMapper.getLabAppointById(id);
     }
 
     @Override

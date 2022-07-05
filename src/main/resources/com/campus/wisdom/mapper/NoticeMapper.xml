@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.campus.wisdom.mapper.NoticeMapper">
-    <select id="getNoticeByNid" resultType="Notice">
-        SELECT * FROM notice WHERE nid = #{nid}
+    <select id="getNoticeById" resultType="Notice">
+        SELECT * FROM notice WHERE id = #{id}
     </select>
     
     <select id="getAllNotice" resultType="Notice">

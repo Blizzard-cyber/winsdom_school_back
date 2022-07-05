@@ -10,7 +10,7 @@ import java.util.Date;
  * @Date: 2022/7/3 20:19
  **/
 public class LabAppoint {
-    String labId;
+    String id;
 
     @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
     Date openTime;
@@ -18,12 +18,12 @@ public class LabAppoint {
     @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
     Date closeTime;
 
-    public String getLabId() {
-        return labId;
+    public String getId() {
+        return id;
     }
 
-    public void setLabId(String labId) {
-        this.labId = labId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Date getOpenTime() {
@@ -45,8 +45,8 @@ public class LabAppoint {
     public LabAppoint() {
     }
 
-    public LabAppoint(String labId, Date openTime, Date closeTime) {
-        this.labId = labId;
+    public LabAppoint(String id, Date openTime, Date closeTime) {
+        this.id = id;
         this.openTime = openTime;
         this.closeTime = closeTime;
     }

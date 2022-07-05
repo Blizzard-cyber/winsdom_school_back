@@ -9,7 +9,7 @@ import com.mysql.cj.jdbc.Blob;
  **/
 public class Notice {
 
-    private String nid;
+    private String id;
 
     private String headline;
 
@@ -19,12 +19,12 @@ public class Notice {
 
 
 
-    public String getNid() {
-        return nid;
+    public String getId() {
+        return id;
     }
 
-    public void setNid(String nid) {
-        this.nid = nid;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getHeadline() {
@@ -54,8 +54,8 @@ public class Notice {
     public Notice() {
     }
 
-    public Notice(String nid, String headline, String content, String img) {
-        this.nid = nid;
+    public Notice(String id, String headline, String content, String img) {
+        this.id = id;
         this.headline = headline;
         this.content = content;
         this.img = img;

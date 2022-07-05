@@ -3,6 +3,7 @@ package com.campus.wisdom.controller;
 import com.campus.wisdom.entity.Notice;
 import com.campus.wisdom.service.NoticeService;
 import com.sun.imageio.plugins.common.ImageUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -18,12 +19,12 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("/notice")
 public class NoticeController {
-    @Resource
+    @Autowired
     private NoticeService noticeService;
 
-    @RequestMapping(value="/{nid}", method = RequestMethod.GET)
-    public Notice getOneNotice(@PathVariable("nid") String nid) {
-        return noticeService.getNoticeByNid(nid);
+    @RequestMapping(value="/{id}", method = RequestMethod.GET)
+    public Notice getOneNotice(@PathVariable("id") String id) {
+        return noticeService.getNoticeById(id);
     }
 
     @RequestMapping(value="/", method = RequestMethod.GET)

@@ -10,7 +10,7 @@ import java.util.List;
  * @Date: 2022/7/3 13:59
  **/
 public interface NoticeMapper {
-    Notice getNoticeByNid(String nid);
+    Notice getNoticeById(String id);
 
     List<Notice> getAllNotice();
 }

@@ -3,6 +3,7 @@ package com.campus.wisdom.controller;
 import com.campus.wisdom.entity.LabAppoint;
 import com.campus.wisdom.entity.News;
 import com.campus.wisdom.service.LabAppointService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -18,12 +19,12 @@ import java.util.List;
 @CrossOrigin
 @RequestMapping("/lab")
 public class LabAppointController {
-    @Resource
+    @Autowired
     private LabAppointService labAppointService;
 
-    @RequestMapping(value = "/{labId}", method = RequestMethod.GET)
-    public LabAppoint getOneLabAppoint(@PathVariable("labId") String labId) {
-        return labAppointService.getLabAppointByLabId(labId);
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public LabAppoint getOneLabAppoint(@PathVariable("id") String id) {
+        return labAppointService.getLabAppointById(id);
     }
 
     @RequestMapping(value="/", method = RequestMethod.GET)
