@@ -8,6 +8,10 @@
         SELECT * FROM student WHERE sid = #{sid}
     </select>
 
+    <update id="modifyPhone">
+         update student set phone = #{phone} where sid = #{sid}
+    </update>
+
     <!-- Student getStudentBySidAndPassword(@Param("sid") String sid,@Param("password") String password) -->
     <select id="getStudentBySidAndPassword" resultType="Student">
         SELECT * FROM student WHERE sid = #{sid} AND password = #{password}

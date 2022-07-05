@@ -22,4 +22,14 @@ public class StudentServiceImp implements StudentService {
     public Student login(String sid,String password) {
         return studentMapper.getStudentBySidAndPassword(sid,password);
     }
+
+    @Override
+    public Student getStudentBySid(String sid) {
+        return studentMapper.getStudentBySid(sid);
+    }
+
+    @Override
+    public void modifyPhone(String sid, String phone) {
+        studentMapper.modifyPhone(sid, phone);
+    }
 }

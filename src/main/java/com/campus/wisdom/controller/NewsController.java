@@ -25,7 +25,7 @@ public class NewsController {
         return newsService.getNewsById(id);
     }
 
-    @RequestMapping(value="/all", method = RequestMethod.GET)
+    @RequestMapping(value="/", method = RequestMethod.GET)
     public List<News> getAllNotice() {
         return newsService.getAllNews();
     }

@@ -23,4 +23,18 @@ public class StudentController {
     public Student login(@PathVariable("sid") String sid,@PathVariable("password") String password){
         return studentService.login(sid,password);
     }
+
+    @RequestMapping(value = "/{sid}", method = RequestMethod.GET)
+    public Student info(@PathVariable("sid") String sid) {
+        Student student = studentService.getStudentBySid(sid);
+        if(student != null) student.setPassword(null);
+        return student;
+    }
+
+
+    @RequestMapping(value = "/{sid}", method = RequestMethod.POST)
+    public String modify(@PathVariable("sid") String sid, @RequestParam("phone") String phone) {
+        studentService.modifyPhone(sid, phone);
+        return "Modify Success";
+    }
 }

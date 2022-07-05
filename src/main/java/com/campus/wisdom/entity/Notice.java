@@ -15,7 +15,7 @@ public class Notice {
 
     private String content;
 
-    private byte[] img;
+    private String img;
 
 
 
@@ -43,18 +43,18 @@ public class Notice {
         this.content = content;
     }
 
-    public byte[] getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(byte[] img) {
+    public void setImg(String img) {
         this.img = img;
     }
 
     public Notice() {
     }
 
-    public Notice(String nid, String headline, String content, byte[] img) {
+    public Notice(String nid, String headline, String content, String img) {
         this.nid = nid;
         this.headline = headline;
         this.content = content;

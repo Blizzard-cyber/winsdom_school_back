@@ -26,7 +26,7 @@ public class NoticeController {
         return noticeService.getNoticeByNid(nid);
     }
 
-    @RequestMapping(value="/all", method = RequestMethod.GET)
+    @RequestMapping(value="/", method = RequestMethod.GET)
     public List<Notice> getAllNotice() {
         return noticeService.getAllNotice();
     }

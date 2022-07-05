@@ -26,7 +26,7 @@ public class LabAppointController {
         return labAppointService.getLabAppointByLabId(labId);
     }
 
-    @RequestMapping(value="/all", method = RequestMethod.GET)
+    @RequestMapping(value="/", method = RequestMethod.GET)
     public List<LabAppoint> getAllLabAppoint() {
         return labAppointService.getAllLabAppoint();
     }

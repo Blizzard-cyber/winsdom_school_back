@@ -15,7 +15,7 @@ public class PayInfo {
     String name;
 
     Double money;
-    short status;   //1表示已付，0表示未付
+    short state;   //1表示已付，0表示未付
     @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     Date startTime;
     @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
@@ -46,11 +46,11 @@ public class PayInfo {
     }
 
     public short getStatus() {
-        return status;
+        return state;
     }
 
     public void setStatus(short status) {
-        this.status = status;
+        this.state = status;
     }
 
     public Date getStartTime() {
@@ -80,12 +80,12 @@ public class PayInfo {
     public PayInfo() {
     }
 
-    public PayInfo(String id, String sid, String name, Double money, short status, Date startTime, Date payTime) {
+    public PayInfo(String id, String sid, String name, Double money, short state, Date startTime, Date payTime) {
         this.id = id;
         this.sid = sid;
         this.name = name;
         this.money = money;
-        this.status = status;
+        this.state = state;
         this.startTime = startTime;
         this.payTime = payTime;
     }

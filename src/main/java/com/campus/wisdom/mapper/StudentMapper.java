@@ -23,4 +23,6 @@ public interface StudentMapper {
       * @Date 18:13 2022/7/3
       **/
     Student getStudentBySidAndPassword(@Param("sid") String sid,@Param("password") String password);
+
+    void modifyPhone(@Param("sid") String sid, @Param("phone") String phone);
 }
