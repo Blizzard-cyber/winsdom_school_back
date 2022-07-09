@@ -27,7 +27,7 @@ public class CourseTableController {
 
     /**
       * @Author Abel
-      * @Description 课程表学期切换
+      * @Description 课程表
       * @Date 20:59 2022/7/3
       **/
     @RequestMapping(value = "/{sid}/{semester}",method = RequestMethod.GET)
@@ -40,9 +40,9 @@ public class CourseTableController {
       * @Description 进入课程表模块
       * @Date 21:00 2022/7/3
       **/
-    @RequestMapping(value = "/{sid}",method = RequestMethod.GET)
+    @RequestMapping(value = "/{sid}/",method = RequestMethod.GET)
     public List<CourseTable> getCourseTableBySid(@PathVariable("sid") String sid){
-        return courseTableService.getCourseTableListBySid(sid,courseTableService.getSemester());
+        return courseTableService.getCourseTableListBySid(sid,courseTableService.getSemester(sid));
     }
 
     /**

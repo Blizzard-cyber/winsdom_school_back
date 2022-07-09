@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.wisdom.mapper.LabAppointMapper">
+    <select id="getLabAppointById" resultType="LabAppoint">
+        SELECT * FROM lab_appoint WHERE id = #{id}
+    </select>
+
+    <select id="getAllLabAppoint" resultType="LabAppoint">
+        SELECT * FROM lab_appoint;
+    </select>
+
+</mapper>

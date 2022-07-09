@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.wisdom.mapper.PayInfoMapper">
+    <select id="getOnePayInfo" resultType="PayInfo">
+        SELECT * FROM pay_info WHERE sid = #{sid} AND id = #{id}
+    </select>
+
+    <select id="getAllPayInfoBySid" resultType="PayInfo">
+        SELECT * FROM pay_info WHERE sid = #{sid}
+    </select>
+
+</mapper>

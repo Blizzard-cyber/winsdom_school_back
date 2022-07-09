@@ -23,10 +23,9 @@ public class CourseTableServiceImp implements CourseTableService {
     public List<CourseTable> getCourseTableListBySid(String sid,String semester) {
         return courseTableMapper.getCourseTableListBySid(sid,semester);
     }
-
     @Override
-    public String getSemester() {
-        List<String> semesterList = courseTableMapper.getSemesterList();
+    public String getSemester(String sid) {
+        List<String> semesterList = courseTableMapper.getSemesterList(sid);
 
         int s = 0;
         for(String semester : semesterList){

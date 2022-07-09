@@ -1,0 +1,15 @@
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('0689', '2020080902001', '编程培训费', 2380.00, 1, '2022-05-19 00:00:00', '2022-05-29 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1001', '2020080902001', '住宿费', 5600.00, 1, '2021-08-25 00:00:00', '2021-08-29 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1002', '2019080902003', '毕业论文答辩费', 4283.00, 1, '2021-08-25 00:00:00', '2021-09-16 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1003', '2019080902003', '住宿费', 650.00, 1, '2022-01-16 00:00:00', '2022-02-14 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1017', '2020080902001', '托福考试费', 1697.00, 0, '2022-01-16 00:00:00', '2090-01-01 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1212', '2020080902001', '雅思笔试费', 1500.00, 1, '2022-06-27 00:00:00', '2022-06-27 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1276', '2019080902003', '雅思班学习费', 10050.00, 1, '2022-05-31 00:00:00', '2022-06-14 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('1369', '2020080902001', 'jlpt考试费', 230.00, 0, '2022-03-10 00:00:00', '2090-01-01 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('2368', '2020080902002', '学费', 2000.00, 1, '2022-09-10 00:00:00', '2022-09-13 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('2525', '2020080902002', '雅思班学习费', 9600.00, 0, '2021-09-26 00:00:00', '2090-01-01 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('2981', '2019080902003', '学费', 2000.00, 1, '2022-09-10 00:00:00', '2022-09-11 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('3698', '2020080902002', '编程培训费', 2600.00, 1, '2022-04-28 00:00:00', '2022-05-11 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('4802', '2020080902001', '雅思班学习费', 23265.00, 1, '2022-07-24 00:00:00', '2022-07-29 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('5333', '2019080902003', '托福考试费', 2600.00, 0, '2022-04-18 00:00:00', '2090-01-01 00:00:00');
+INSERT INTO `pay_info` (`id`, `sid`, `name`, `money`, `state`, `start_time`, `pay_time`) VALUES ('6565', '2020080902001', '学费', 2000.00, 1, '2022-09-10 00:00:00', '2022-09-11 00:00:00');

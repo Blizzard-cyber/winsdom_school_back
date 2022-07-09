@@ -2,7 +2,7 @@ package com.campus.wisdom.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import java.util.Date;
+import java.sql.Date;
 
 /**
  * @ClassName Exam
@@ -11,7 +11,7 @@ import java.util.Date;
  * @Date 2022/7/1 8:47
  * @Version 1.0
  **/
-public class Exam{
+public class Exam implements Comparable<Exam>{
     private String cid;
     private String name;
     @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
@@ -101,5 +101,10 @@ public class Exam{
                 ", seatNum='" + seatNum + '\'' +
                 ", remark='" + remark + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Exam o) {
+        return o.date.compareTo(this.date);
     }
 }

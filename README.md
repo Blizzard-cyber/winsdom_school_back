@@ -1,51 +1,64 @@
 # 2022暑假生产实习SSM+VUE项目——智慧校园服务平台后端部分
 
-## 提交指南
+> [前端部分 Click Here](https://github.com/Blizzard-cyber/winsdom_school_front)
 
-![push](Img/push.png)
 
-## 合并指南
+## 项目介绍：
 
-![merge](Img/merge.png)
+- ### 	后端用于项目的逻辑处理
 
-##  Setup
+- ### 前后端分离使用Axios发送请求
+
+- ### 后负责返回请求处理及返回
+
+## 技术栈：
+
+- 脚手架：Vue-cli (Vue2)
+- UI组件：Element-UI+View UI
+- 后端框架：SSM（spring、springMVC、mybatis）
+- 后端服务器：Tomcat
+- 数据库：Mysql
+- 接口测试：Postman
+- 路由：vue-router
+
+## 实现功能：
+
+- [x] 用户登录
+- [x] 门户新闻及公告
+- [x] 个人信息查看及修改
+- [x] 课程表查看
+- [x] 成绩、考试信息查看
+- [x] 缴费信息查看
+- [x] 实验室开放信息查看
+- [x] 毕设信息查看
+- [x] 页面路由配置
+- [ ] ..........
+
+## 食用指南
+
+- ### 前端项目启动之前请先启动后端！！！
+
+- ### 使用前先将数据库数据导入！
+
+- ### 项目启动前配置Tomcat、部署本地图片到服务器！
+
+## Build Setup
 
 ``` bash
-#拉取远端仓库代码
-git clone https://github.com/Blizzard-cyber/winsdom_school_back.git
+# install dependencies
+npm install /yarn
 
-#拉取到本地后查看master分支（主分支）内容为模板内容
-.....
-#编写代码
-.....
-#编写代码完成
+# serve with hot reload at localhost:8888
+npm run dev /yarn dev /yarn start
 
-#创建自己的分支
-git checkout -b <yourBranchName>
+# build for production with minification
+npm run build /yarn build
 
-#提交过程
-#提交所有更改
-git add .
 
-#commit
-git commit -m "提交说明"
-
-#push
-git push origin <yourBranchName>
-
-#合并代码到master分支
-#切换到master分支
-git  checkout master
-
-#pull master分支的状态
-git pull origin master
-
-#合并自己分支到master
-git  merge test
-
-#可检查状态
-git status
-
-#push到远端
-git push origin master
 ```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## LICENSE
+
+[MIT](https://github.com/Blizzard-cyber/winsdom_scool_back/blob/master/LICENSE)

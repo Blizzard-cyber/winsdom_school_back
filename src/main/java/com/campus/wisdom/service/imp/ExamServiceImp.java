@@ -7,6 +7,7 @@ import com.campus.wisdom.service.ExamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -24,8 +25,10 @@ public class ExamServiceImp implements ExamService {
     private ExamMapper examMapper;
 
     @Override
-    public List<Exam> getExamListBySid(String sid, String semester) {
-        List<String> cidList = courseTableMapper.getCidListBySid(sid,semester);
-        return examMapper.getExamListByCid(cidList);
+    public List<Exam> getExamListBySid(String sid) {
+        List<String> cidList = courseTableMapper.getCidListBySid(sid);
+        List<Exam> examList = examMapper.getExamListByCid(cidList);
+        Collections.sort(examList);
+        return examList;
     }
 }

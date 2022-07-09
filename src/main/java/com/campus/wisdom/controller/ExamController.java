@@ -21,18 +21,6 @@ import java.util.List;
 public class ExamController {
     @Autowired
     private ExamService examService;
-    @Autowired
-    private CourseTableService courseTableService;
-
-    /**
-      * @Author Abel
-      * @Description 考试信息学期切换
-      * @Date 21:01 2022/7/3
-      **/
-    @RequestMapping(value = "/{sid}/{semester}",method = RequestMethod.GET)
-    public List<Exam> getExamListBySid(@PathVariable("sid") String sid, @PathVariable String semester){
-        return examService.getExamListBySid(sid,semester);
-    }
 
     /**
       * @Author Abel
@@ -41,6 +29,6 @@ public class ExamController {
       **/
     @RequestMapping(value = "/{sid}",method = RequestMethod.GET)
     public List<Exam> getExamListBySid(@PathVariable("sid") String sid){
-        return examService.getExamListBySid(sid,courseTableService.getSemester());
+        return examService.getExamListBySid(sid);
     }
 }

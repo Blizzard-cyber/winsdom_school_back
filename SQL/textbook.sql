@@ -1,0 +1,18 @@
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787030266552', '大学物理学（上册）', '滕保华等', '2019-01-01', '科学出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787030643704', '基础工程训练', '何倩鸿', '2019-01-01', '科学出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040324587', '计算机系统与网络安全技术', '周世杰、陈伟、罗绪成等', '2011-01-01', '高等教育出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040463866', '概率论与数理统计', '徐全智，吕恕', '2017-08-01', '高等教育出版社', '第3版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040466744', '电路与模拟电子技术', '殷瑞祥', '2017-01-01', '高等教育出版社', '第3版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040492156', '线性代数与空间解析几何', '黄廷祝，成孝予', '2018-09-01', '高等教育出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040494815', '毛泽东思想和中国特色社会主义理论体系概论', '本书编写组', '2018-01-01', '高等教育出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040495034', '思想道德修养与法律基础(2018版)', '本书编写组', '2018-09-01', '高等教育出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040503449', '微积分（上册）', '数学科学学院', '2018-09-01', '高等教育出版社', '第3版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787040511468', '微积分（下册）', '数学科学学院', '2019-01-01', '高等教育出版社', '第3版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787111599418', '数字设计：原理与实践', 'Wakerly（美）', '2017-08-01', '机械工业出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787111599715', '计算机网络:自顶向下方法', 'James F.Kurose, Keith W.Ross，译著陈鸣等', '2018-01-01', '机械工业出版社', '第7版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787121309502', '操作系统--精髓与设计原理', 'Stallings', '2017-02-01', '机械工业出版社', '第8版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787121381782', '数据库系统及应用', '魏祖宽等', '2018-01-01', '电子工业出版社', '第3版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787301290316', 'C与C++程序设计', '戴波、陈文宇等', '2018-01-01', '北京大学出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787301297766', '数据结构与算法', '林劼、刘震、陈端兵、戴波', '2017-08-01', '北京大学出版社', '第1版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787302408642', '计算机组成与系统结构', '袁春风', '2015-01-01', '清华大学出版社', '第2版');
+INSERT INTO `textbook` (`id`, `name`, `author`, `time`, `press`, `version`) VALUES ('9787503572524', '高校思想政治理论课实践教程', '彭彬、杨小军、揭晓', '2018-01-01', '科学出版社', '第1版');

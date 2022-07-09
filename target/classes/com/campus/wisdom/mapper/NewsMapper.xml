@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.wisdom.mapper.NewsMapper">
+    <select id="getNewsById" resultType="News">
+        SELECT * FROM news WHERE id = #{id}
+    </select>
+
+    <select id="getAllNews" resultType="News">
+        SELECT * FROM news;
+    </select>
+
+</mapper>

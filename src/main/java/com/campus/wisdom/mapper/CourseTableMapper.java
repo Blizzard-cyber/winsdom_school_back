@@ -18,19 +18,19 @@ public interface CourseTableMapper {
       * @Description 根据学生id和学期查找课表信息
       * @Date 21:09 2022/7/3
       **/
-    List<CourseTable> getCourseTableListBySid(@Param("id") String sid,@Param("semester") String semester);
+    List<CourseTable> getCourseTableListBySid(@Param("sid") String sid,@Param("semester") String semester);
 
     /**
       * @Author Abel
       * @Description 根据学生id和学期查找课程id集合
       * @Date 21:10 2022/7/3
       **/
-    List<String> getCidListBySid(@Param("id") String sid, @Param("semester") String semester);
+    List<String> getCidListBySid(@Param("sid") String sid);
 
     /**
       * @Author Abel
       * @Description 查找学生学期集合
       * @Date 21:11 2022/7/3
       **/
-    List<String> getSemesterList();
+    List<String> getSemesterList(@Param("sid") String sid);
 }

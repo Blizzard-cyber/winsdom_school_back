@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -28,9 +29,9 @@ public class StudyServiceImp implements StudyService {
         BigDecimal creditNum = new BigDecimal(0);
         for(Study study : studyList){
             creditNum = creditNum.add(new BigDecimal(study.getCourse().getCredit()));
-            study.setCreditSum(creditNum + "");
+            Study.setCreditSum(creditNum + "");
         }
-
+        Collections.sort(studyList);
         return studyList;
     }
 }

@@ -1,12 +1,10 @@
 package com.campus.wisdom.controller;
 
 import com.campus.wisdom.entity.LabAppoint;
-import com.campus.wisdom.entity.News;
 import com.campus.wisdom.service.LabAppointService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**

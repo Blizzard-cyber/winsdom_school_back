@@ -24,5 +24,5 @@ public interface CourseTableService {
       * @Description 获取指定学生当前学期
       * @Date 21:05 2022/7/3
       **/
-    String getSemester();
+    String getSemester(String sid);
 }

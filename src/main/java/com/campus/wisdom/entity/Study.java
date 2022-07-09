@@ -7,25 +7,20 @@ package com.campus.wisdom.entity;
  * @Date 2022/7/3 19:32
  * @Version 1.0
  **/
-public class Study {
+public class Study implements Comparable<Study>{
     private Student student;
     private Course course;
     private int grade;
-    private int makeupGrade;
-    private int retakeGrade;
     private static String creditSum;
     private String state;
 
     public Study() {
     }
 
-    public Study(Student student, Course course, int grade, int makeupGrade, int retakeGrade, String creditSum, String state) {
+    public Study(Student student, Course course, int grade, String state) {
         this.student = student;
         this.course = course;
         this.grade = grade;
-        this.makeupGrade = makeupGrade;
-        this.retakeGrade = retakeGrade;
-        Study.creditSum = creditSum;
         this.state = state;
     }
 
@@ -53,27 +48,11 @@ public class Study {
         this.grade = grade;
     }
 
-    public int getMakeupGrade() {
-        return makeupGrade;
-    }
-
-    public void setMakeupGrade(int makeupGrade) {
-        this.makeupGrade = makeupGrade;
-    }
-
-    public int getRetakeGrade() {
-        return retakeGrade;
-    }
-
-    public void setRetakeGrade(int retakeGrade) {
-        this.retakeGrade = retakeGrade;
-    }
-
-    public String getCreditSum() {
+    public static String getCreditSum() {
         return creditSum;
     }
 
-    public void setCreditSum(String creditSum) {
+    public static void setCreditSum(String creditSum) {
         Study.creditSum = creditSum;
     }
 
@@ -91,10 +70,13 @@ public class Study {
                 "student=" + student +
                 ", course=" + course +
                 ", grade=" + grade +
-                ", makeupGrade=" + makeupGrade +
-                ", retakeGrade=" + retakeGrade +
-                ", creditSum='" + creditSum + '\'' +
+                ", creditSum=" + creditSum +
                 ", state='" + state + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Study o) {
+        return o.getCourse().getName().compareTo(this.getCourse().getName());
     }
 }

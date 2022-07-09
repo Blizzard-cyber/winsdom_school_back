@@ -1,6 +1,5 @@
 package com.campus.wisdom.entity;
 
-import com.mysql.cj.jdbc.Blob;
 
 /**
  * @Author:Gary

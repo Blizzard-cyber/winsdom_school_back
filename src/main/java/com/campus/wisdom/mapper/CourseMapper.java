@@ -18,4 +18,6 @@ public interface CourseMapper {
       * @Date 21:08 2022/7/3
       **/
     Course getCourseByCid(@Param("cid") String cid);
+
+//    String getCidByName(@Param("name") String name);
 }

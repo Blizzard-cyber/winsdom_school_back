@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.wisdom.mapper.GdesignMapper">
+    <!-- Gdesign getGdesignBySid(@Param("sid") String sid) -->
+    <select id="getGdesignBySid" resultMap="distributedQuery">
+        SELECT * FROM gdesign WHERE sid = #{sid}
+    </select>
+    <resultMap id="distributedQuery" type="Gdesign">
+        <result property="grade" column="grade"/>
+        <association property="student"
+                     select="com.campus.wisdom.mapper.StudentMapper.getStudentBySid"
+                     column="sid"/>
+        <association property="teacher"
+                     select="com.campus.wisdom.mapper.TeacherMapper.getTeacherByTid"
+                     column="tid"/>
+        <association property="gdesignInfo"
+                     select="com.campus.wisdom.mapper.GdesignInfoMapper.getGdesignInfoById"
+                     column="gid"/>
+    </resultMap>
+</mapper>

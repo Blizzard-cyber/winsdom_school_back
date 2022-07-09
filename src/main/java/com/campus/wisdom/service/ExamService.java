@@ -17,5 +17,5 @@ public interface ExamService {
       * @Description 获取指定学生指定学期的考试信息
       * @Date 21:06 2022/7/3
       **/
-    List<Exam> getExamListBySid(String sid,String semester);
+    List<Exam> getExamListBySid(String sid);
 }
