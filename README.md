@@ -1,6 +1,6 @@
 # 2022暑假生产实习SSM+VUE项目——智慧校园服务平台后端部分
 
-> [前端部分 Click Here](https://github.com/Blizzard-cyber/winsdom_school_front)
+> [前端部分 Click Here](https://github.com/Blizzard-cyber/winsdom_scool_front)
 
 
 ## 项目介绍：
@@ -42,23 +42,6 @@
 
 - ### 项目启动前配置Tomcat、部署本地图片到服务器！
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install /yarn
-
-# serve with hot reload at localhost:8888
-npm run dev /yarn dev /yarn start
-
-# build for production with minification
-npm run build /yarn build
-
-
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
 ## LICENSE
 
-[MIT](https://github.com/Blizzard-cyber/winsdom_scool_back/blob/master/LICENSE)
+[MIT](https://github.com/Blizzard-cyber/winsdom_school_back/blob/master/LICENSE)
